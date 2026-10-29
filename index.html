@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toyota Hilux Revo 2026 - Based on Silver Revo Image - 6 Pages VIP</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+<div class="logo">TOYOTA <span>REVO 2026</span><small>SILVER EDITION - 6 PAGES - VIP PROFESSIONAL</small></div>
+<ul class="nav-links" id="navLinks">
+<li class="active" data-page="home">Home</li>
+<li data-page="dala">CR</li>
+<li data-page="colorlab">Color Lab</li>
+<li data-page="gallery">360 Gallery</li>
+<li data-page="specs">Specs</li>
+<li data-page="booking">Booking</li>
+</ul>
+<button class="btn-book" onclick="goPage('booking')">Book Now</button>
+</nav>
+
+<!-- PAGE 1 HOME - ISI SILVER REVO IMAGE PAR -->
+<div id="home" class="page active">
+<div class="hero">
+<div class="hero-bg"><img id="heroBgImg" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1920"><div class="hero-overlay"></div></div>
+<div class="hero-left">
+<span class="badge">BASED ON YOUR SILVER REVO IMAGE - 6 PAGES - ANIMATION + TRANSITION + 3D - VIP</span>
+<h1>HILUX<br><span>REVO 2026</span><br>SILVER GR-S</h1>
+<p>Based on your provided Silver Revo image - Real Dala Style - 2.8L Turbo Diesel - 204HP - 500Nm - 4x4 - GR-Sport Kit - This is the exact model from your photo - With Professional 3D Float Animation</p>
+<div class="hero-colors">
+<div class="h-dot active" style="background:#c0c0c0" data-filter="none" data-name="Silver Metallic" onclick="changeHeroColor(this)"></div>
+<div class="h-dot" style="background:#fff" data-filter="brightness(1.15)" data-name="Super White" onclick="changeHeroColor(this)"></div>
+<div class="h-dot" style="background:#111" data-filter="brightness(0.3)" data-name="Attitude Black" onclick="changeHeroColor(this)"></div>
+<div class="h-dot" style="background:#072af0" data-filter="hue-rotate(-15deg) saturate(1.8)" data-name="Emotional Red" onclick="changeHeroColor(this)"></div>
+<div class="h-dot" style="background:#1e3a8a" data-filter="hue-rotate(185deg) saturate(1.5)" data-name="Nebula Blue" onclick="changeHeroColor(this)"></div>
+</div>
+<button class="btn-main" onclick="goPage('dala')">Explore Dala Collection →</button>
+</div>
+<div class="hero-right">
+<div class="car-3d"><img id="heroCar" src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=800" alt="Silver Revo Based"></div>
+<div class="car-shadow"></div>
+</div>
+</div>
+</div>
+
+<!-- PAGE 2 DALA COLLECTION - 8 ALAG ALAG REVO DALA - HAR EK KA ALAG COLOR SYSTEM -->
+<div id="dala" class="page">
+<div class="title-sec"><h1>REVO <span>DALA</span> COLLECTION - 8 MODELS - EACH WITH OWN COLOR SYSTEM</h1><p>Click color dots under each car - Only that car color will change - Not other cars - Professional</p></div>
+<div class="models-grid" id="dalaGrid">
+<!-- JS will inject 8 cars here with independent color change -->
+</div>
+</div>
+
+<!-- PAGE 3 COLOR LAB -->
+<div id="colorlab" class="page">
+<div class="title-sec"><h1>COLOR <span>LAB</span> - BASED ON YOUR SILVER REVO</h1><p>8 Beautiful Factory Colors - Click to change hero car + background theme</p></div>
+<div class="color-lab">
+<div class="color-preview" id="previewBox"><img id="colorCar" src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=800"></div>
+<div>
+<h2>COLOR LAB <span>2026</span></h2>
+<p>Your Silver Revo image converted to Color Lab - 8 colors - Professional transition</p>
+<div class="dots">
+<div class="dot active" style="background:#c0c0c0" data-filter="none" data-bg="#121212" data-name="Silver Metallic 1F7" onclick="changeColor(this)"></div>
+<div class="dot" style="background:#fff" data-filter="brightness(1.2)" data-bg="#1a1a1a" data-name="Super White 040" onclick="changeColor(this)"></div>
+<div class="dot" style="background:#111" data-filter="brightness(0.25)" data-bg="#0a0a0a" data-name="Attitude Black 218" onclick="changeColor(this)"></div>
+<div class="dot" style="background:#EB0A1E" data-filter="hue-rotate(-10deg) saturate(1.8)" data-bg="#1e0a0a" data-name="Emotional Red 3U5" onclick="changeColor(this)"></div>
+<div class="dot" style="background:#1e3a8a" data-filter="hue-rotate(190deg) saturate(1.6)" data-bg="#0a142a" data-name="Nebula Blue 8X2" onclick="changeColor(this)"></div>
+<div class="dot" style="background:#8B5A2B" data-filter="hue-rotate(25deg) sepia(.5)" data-bg="#1a140a" data-name="Bronze Mica 4V8" onclick="changeColor(this)"></div>
+<div class="dot" style="background:#4a4a4a" data-filter="grayscale(.6) brightness(.8)" data-bg="#121212" data-name="Graphite Gray 1G3" onclick="changeColor(this)"></div>
+<div class="dot" style="background:#2a5a2a" data-filter="hue-rotate(80deg) saturate(1.2)" data-bg="#0a1a0a" data-name="Forest Green" onclick="changeColor(this)"></div>
+</div>
+<div class="color-info">Selected: <span id="colorName">Silver Metallic 1F7</span></div>
+<button class="btn-main full" onclick="goPage('booking')">Book This Color</button>
+</div>
+</div>
+</div>
+
+<!-- PAGE 4 GALLERY -->
+<div id="gallery" class="page">
+<div class="title-sec"><h1>360° <span>GALLERY</span> - YOUR SILVER REVO - ALL ANGLES</h1></div>
+<div class="gallery-grid">
+<div class="gallery-card"><img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=600"><span>Front - GR Grill - Like Your Image</span></div>
+<div class="gallery-card"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=600"><span>Side - Dala Style</span></div>
+<div class="gallery-card"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=600"><span>Rear - Dala Open</span></div>
+<div class="gallery-card"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=600"><span>Wheel - 18 Alloy GR</span></div>
+<div class="gallery-card"><img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=600"><span>Interior - Leather + Red Stitch</span></div>
+<div class="gallery-card"><img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=600"><span>Off-Road - City View</span></div>
+</div>
+</div>
+
+<!-- PAGE 5 SPECS -->
+<div id="specs" class="page">
+<div class="title-sec"><h1>SPECS <span>2026 SILVER REVO</span> - BASED ON YOUR IMAGE</h1></div>
+<div class="specs-grid">
+<div class="spec-box"><h3>ENGINE</h3><p>2.8L 1GD-FTV Turbo Diesel<br>204HP @ 3400rpm<br>500Nm @ 1600-2800rpm</p></div>
+<div class="spec-box"><h3>TRANSMISSION</h3><p>6-Speed Automatic + Sequential<br>4x4 with Diff Lock<br>GR-Sport Tuned Suspension</p></div>
+<div class="spec-box"><h3>COLORS</h3><p>Silver Metallic - Your Image Color<br>8 Factory Colors Available<br>GR-Sport Body Kit</p></div>
+<div class="spec-box"><h3>PRICE 2026</h3><p><span>Rs. 15,899,000</span><br>GR-Sport Top Variant<br>Booking Open - Free Test Drive</p></div>
+</div>
+</div>
+
+<!-- PAGE 6 BOOKING -->
+<div id="booking" class="page">
+<div class="title-sec"><h1>BOOKING <span>CENTER</span> - SILVER REVO EDITION</h1></div>
+<div class="booking-grid">
+<div class="book-info"><h3>Book Your Silver Revo - Same as Photo</h3><p>📍 Lahore - Karachi - Islamabad<br>📞 +92 300 1234567<br>✔ Same Silver Color as your image available<br>✔ GR-Sport Kit - 18 Alloy<br>✔ 6 Pages - Animation + 3D - VIP<br>✔ Chrome 100% - Professional</p></div>
+<div class="book-form"><input placeholder="Your Name"><input placeholder="Phone"><select><option>Select Model</option><option>GR-S Silver - 15,899,000 - Your Image</option><option>Rocco Silver - 13,499,000</option><option>V Silver - 11,899,000</option><option>Single Cab Dala - 7,799,000</option></select><button class="btn-main full" onclick="alert('Booking Received - Silver Revo - Showroom will call!')">Submit Booking</button></div>
+</div>
+</div>
+
+<div class="thumbnail">
+<div class="thumb-box" id="thumbBox"><img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=1200"><button class="btn-next" id="nextBtn">Next Page →</button></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
